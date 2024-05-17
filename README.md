@@ -1,1 +1,1 @@
-# Netfilx-clone
+# Netflix-clone
