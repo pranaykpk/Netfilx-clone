@@ -6,24 +6,80 @@
    
     font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
     z-index: 4;
-    max-width: 98.5vw;
+    max-width: 98.9vw;
+    
 }
-html{
+body{
     background-color: black;
 
 }
 :root{
-    --border-color:rgba(128, 128, 128, 0.7);
+    --border-color:rgb(51 51 51 / 70%);
 }
 .start{
     width:max(1200px,100vw);
     height: 90vh;
-    background-image: url(asserts/images/bg.jpg);
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/a99688ca-33c3-4099-9baa-07a2e2acb398/ca15fd28-b624-4852-8bfe-9cdd5c88475d/IN-en-20240520-popsignuptwoweeks-perspective_alpha_website_small.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     position: relative;
-    background-size: cover;
+   
     box-sizing: border-box;
+}
+
+nav{
+    
+    max-width: 74vw;
+    
+    height: 10%;
+    display: flex;
+    margin:   auto;
+
+    align-items: center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+nav img{
+    position: relative;
+    z-index: 4;
+    height: 50px;
+    top: 8px;
+    right: 22px;
+    
+}
+.buttons-class{
+    position: relative;
+    z-index: 4;
+    display: flex;
+    width: 18vw;
+    /* justify-content: space-between; */
+    top: 5px;
+    gap: 6px;
+}
+.buttons-class .english{
+    border: 0.01px solid white;
+    font-weight: 500;
+    font-size: 16px;
+    /* padding: 3px 26px 5px 26px; */
+    min-width:70px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 29px;
+    border-radius: 3px;
+}
+.buttons-class .sign-in{
+    font-size: 14px;
+    font-weight: 600;
+    background-color: red;
+    min-width: 80px;
+    height: 28px;
+    color:white;
+    border-radius: 3px;
+    border: 2px solid red;
+    width: 70px;
+    height: 27px;
 }
 .overbox{
     width:100%;
@@ -36,51 +92,6 @@ html{
     right: 0px;
     z-index: 2;
 }
-nav{
-    
-    max-width: 74%;
-    
-    height: 10%;
-    display: flex;
-    margin:   auto;
-
-    align-items: center;
-    justify-content:space-between ;
-}
-nav img{
-    position: relative;
-    z-index: 4;
-    height: 60%;
-    top: 8px;
-    right: 22px;
-    
-}
-.buttons-class{
-    position: relative;
-    z-index: 4;
-    display: flex;
-    width: 18%;
-    justify-content: space-between;
-    top: 5px;
-}
-.buttons-class .english{
-    border: 0.01px solid white;
-    font-weight: 500;
-    font-size: 16px;
-    padding: 3px 26px 5px 26px;
-    border-radius: 3px;
-}
-.buttons-class .sign-in{
-    font-size: 14px;
-    font-weight: 600;
-    background-color: red;
-    min-width: 80px;
-    height: 28px;
-    color:white;
-    border-radius: 3px;
-    border: 2px solid red;
-    padding: 2px 5px 6px 5px;
-}
 .section2{
     height: 100%;
     width: 100%;
@@ -89,7 +100,9 @@ nav img{
     align-items: center;
     justify-content: center;  
     flex-direction: column; 
-    gap: 15px;
+    gap: 23px;
+    text-align: center;
+    padding: 30px;
 }
 .section2 h2{
     font-size: 48px;
@@ -112,15 +125,15 @@ nav img{
 .email{
     resize: none;
     width: 370px;
-    line-height: 1.5;
+    /* line-height: 1.5; */
     padding: 8px;
     height: 50px;
     font-size: 16px;
     font-weight: 500;
     position: relative;
-    border: 0.5px solid var(--border-color);
+    border: 0.3px solid rgba(155, 155, 155, 0.568);
     color: inherit;
-    background: transparent;
+    background: rgba(20,20,20,0.8);
     background-clip: padding-box;
     /* display: flex;
     justify-content: center;
@@ -145,19 +158,24 @@ nav img{
 
 }
 .sec{
-    width: 95vw;
+    width: 97vw;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: black;
     width: max(1200px,100vw);
-    border-top: 10px solid var(--border-color);
+
+   
     position: relative;
     padding: 20px;
+    min-height: auto;
 }
+
 .sec h2{
     font-weight: 900;
+  
 }
+
 h2{
     font-size: 48px;
     font-weight: 1000;
@@ -166,24 +184,45 @@ h3{
     font-size: 24;
     font-weight: 500;
 } 
+.tv3{
+    position: relative;
+    min-width: 37%;
+}
+
 .tv3 video{
-    width: 31%;
+    width: 100%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 54%;
     position: absolute;
-    bottom: 27%;
-    right: 9.7%;
-    z-index: -1;
+    bottom: 25%;
+    right: 14%;
+    /* z-index: -1; */
     display: inline-block;
     vertical-align: baseline;
 }
 .tv3 img{
-    width: 41.5vw;
+    width: 100%;
+    z-index: 5;
+    position: relative;
 }
 .tv5 video{
-    width: 27%;
-    position: absolute;
-    bottom: 45%;
-    right: 15%;
     z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 63%;
+    max-height: 43%;
+    position: absolute;
+    top: 34%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+}
+.tv5{
+    position: relative;
+}
+.tv5 image{
+    width: 100%;
 }
 .av4 img{
     width: 100%;
@@ -191,12 +230,105 @@ h3{
 .av6 img{
     width: 100%;
 }
-@media screen and (max-width:705px) {
-    .sec{
-       flex-direction: column;
+@media screen and (max-width:960px) {
+    .section2 h2{
+        font-size: 35px;
+        font-weight: 700;
     }
-    .textarea{
+    .section2 h3{
+        font-size: 20px;
+        font-weight: 300;
+       
+    }
+    .section2 h4{
+        font-weight: 200;
+        font-size: 16px;
+    }
+    .sec{
+        text-align: center;
+        font-size: 0.8rem;
+       flex-direction: column;
+       gap: 90px;
+       
+    }
+    .sec h2{
+        font-size: 30px;
+    }
+    .textarea,.textarea-2{
         flex-direction: column;
+        align-items: center;
+    }
+    nav img{
+        height: 30px;
+    }
+    nav{
+        width: 100vw;
+        margin: 0px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .start{
+        height:60vh;
     }
 }
+.line{
+    height: 10px;
+    background-color:  var(--border-color);
+}
+.faq{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    gap: 7px;
+   
+}
+.faq>p{
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+    padding: 30px;
+}
+.box{
+    background-color: #2d2d2d;
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 29px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+.box>p{
+    font-size: 24px;
+    font-weight: 400;
+}
 
+.box:hover{
+    background-color:#414141;
+}
+.end{
+    
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    font-size: 24px;
+    justify-content: center;
+}
+
+.textarea-2{
+    width: 80%;
+    display: flex;
+    margin:  30px auto ;
+    justify-content: center;
+    gap: 7px;
+
+}
+
+.textarea-2 .email-2{
+    background: rgba(57, 56, 56, 0.731);
+    border: 1px solid rgba(255, 255, 255, 0.715);
+    width: 340px;
+    height: 50px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
